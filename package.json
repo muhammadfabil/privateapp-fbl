@@ -1,0 +1,42 @@
+{
+  "name": "gfinance-scrapper",
+  "version": "1.0.0",
+  "description": "Personal API for scraping Indonesia Sharia Stock Index (ISSI) data from Google Finance",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "npx tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "npx tsc",
+    "scrape": "npx tsx src/scripts/scrape.ts"
+  },
+  "keywords": [
+    "issi",
+    "stock",
+    "scraper",
+    "google-finance",
+    "indonesia"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.6.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.38.3",
+    "express": "^5.0.1",
+    "node-cron": "^3.0.3",
+    "pg": "^8.16.3",
+    "playwright": "^1.57.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.3",
+    "@types/node-cron": "^3.0.11",
+    "@types/pg": "^8.16.0",
+    "drizzle-kit": "^0.30.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

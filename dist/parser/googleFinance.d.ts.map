@@ -1,0 +1,1 @@
+{"version":3,"file":"googleFinance.d.ts","sourceRoot":"","sources":["../../src/parser/googleFinance.ts"],"names":[],"mappings":"AACA,OAAO,KAAK,EACR,KAAK,EAML,iBAAiB,EACpB,MAAM,mBAAmB,CAAC;AAE3B;;GAEG;AACH,wBAAgB,YAAY,CAAC,IAAI,EAAE,MAAM,EAAE,MAAM,EAAE,MAAM,GAAG,iBAAiB,CAc5E;AAuMD;;GAEG;AACH,wBAAgB,cAAc,CAAC,IAAI,EAAE,MAAM,EAAE,MAAM,EAAE,MAAM,GAAG,OAAO,CAAC,KAAK,CAAC,CAmF3E"}
