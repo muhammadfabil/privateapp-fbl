@@ -1,11 +1,17 @@
 import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { config } from './config.js';
 import { initializeDatabase } from './db/index.js';
 import { router as apiRouter } from './api/routes.js';
 import { closeBrowser } from './scraper/browser.js';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const app = express();
 // Middleware
 app.use(express.json());
+// Serve static files (dashboard)
+app.use(express.static(path.join(__dirname, '../public')));
 // CORS for local development
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
